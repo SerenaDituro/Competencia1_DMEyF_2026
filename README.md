@@ -24,7 +24,7 @@ La carpeta tiene que existir. Las notebooks generan solas la clase ternaria y el
 **Feature engineering**
 `ccajas_depositos` en NA para 202105 → lag1/delta1 y lag2/delta2 → ranking por mes con cero fijo de todas las variables (salvo `numero_de_cliente`, `foto_mes` y `clase_ternaria`).
 
-**Optimización bayesiana (las dos):** `mlrMBO`, k-fold 5 estratificado sobre 202103–202105, métrica AUC, sin undersampling, rangos de la notebook z495 (`num_iterations` 64–4096, `num_leaves` 16–2048, `min_sum_hessian_in_leaf` 1e-06–0.1).
+**Optimización bayesiana:** `mlrMBO`, k-fold 5 estratificado sobre 202103–202105, métrica AUC, sin undersampling, rangos de la notebook z495 (`num_iterations` 64–4096, `num_leaves` 16–2048, `min_sum_hessian_in_leaf` 1e-06–0.1).
 
 ## Cómo reproducir la entrega
 
